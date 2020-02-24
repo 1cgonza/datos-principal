@@ -1,20 +1,19 @@
-html {
-  box-sizing: border-box;
-  height: 100%;
+@import './utils/typography';
+@import './utils/grid';
+@import './breakpoints/base';
+
+// @media (min-width: 576px) {
+  //   @import './breakpoints/tablet';
+  // }
+
+@media (min-width: 768px) {
+  @import './breakpoints/tablet';
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+@media (min-width: 992px) {
+  @import './breakpoints/screen';
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Share Tech Mono', monospace;
+@media (min-width: 1200px) {
+  @import './breakpoints/large';
 }
