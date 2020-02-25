@@ -19,7 +19,7 @@ function datosPrincipalGoogleFonts() {
 
 function datosPrincipalEnqueueScripts() {
   if (!is_admin()) {
-    wp_deregister_script('jquery');
+    // wp_deregister_script('jquery');
     wp_enqueue_script('theme-bundle-js', get_template_directory_uri() . '/dist/app.js', array(), null, true);
 
     wp_enqueue_style('google-fonts', datosPrincipalGoogleFonts(), array(), null);
